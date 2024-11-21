@@ -1,0 +1,28 @@
+<?php
+
+// A inclure ce fichier dans la racine du dossier de votre projet Gravity
+ 
+
+require __DIR__.'/vendor/grale/vendor/autoload.php';
+
+
+use Symfony\Component\Console\Application;
+use Commands\MakeControllerCommand;
+use Commands\MakeEntityCommand;
+use Commands\MakeResourceCommand;
+use Commands\MakeRoutesCommand;
+use Commands\MakeModuleCommand;
+
+
+$app = new Application();
+
+$app->add(new MakeControllerCommand());
+$app->add(new MakeEntityCommand());
+$app->add(new MakeResourceCommand());
+$app->add(new MakeRoutesCommand());
+$app->add(new MakeModuleCommand());
+
+$app->run();
+
+
+?>

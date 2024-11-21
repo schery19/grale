@@ -1,0 +1,25 @@
+{
+    "name": "gravity-framework/grale",
+    "description": "L'utilitaire CLI pour le framework gravity",
+    "keywords": ["framework", "gravity", "php", "console"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "\"Schneider Chéry\"",
+            "email": "schneiderchery7@gmail.com"
+        }
+    ],
+
+    "require": {
+        "symfony/console": "5.4.x-dev"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Commands\\": "src/Commands",
+            "Templates\\": "src/Templates"
+        }
+    },
+
+    "minimum-stability": "dev"
+}
