@@ -22,7 +22,7 @@ class ResourceTemplate {
 
         class {$name} extends Resource {
 
-            protected static \$entity = {$nameSplited}::class;
+            protected \$entity = {$nameSplited}::class;
 
 
             function toArray() {
